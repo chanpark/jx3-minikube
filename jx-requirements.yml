@@ -19,8 +19,8 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
-    externalDNS: false
+    domain: 10.142.15.72.sslip.io
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
