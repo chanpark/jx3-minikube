@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         chanpark/jx3-minikube: true
+        chanpark/spring-boot-http-gradle: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         chanpark/jx3-minikube: merge
+        chanpark/spring-boot-http-gradle: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - chanpark/jx3-minikube
+        - chanpark/spring-boot-http-gradle
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - chanpark/jx3-minikube
+        - chanpark/spring-boot-http-gradle
       target_url: http://lighthouse-jx.192.168.99.100.sslip.io/merge/status
 kind: ConfigMap
 metadata:
